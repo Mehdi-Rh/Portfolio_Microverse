@@ -395,3 +395,157 @@ h2 {
   background: #2e3bc9;
   color: #fff;
 }
+
+/* About myself */
+.about_myself {
+  display: grid;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 114px 24px;
+  position: absolute;
+  width: 375px;
+  height: 1125.15px;
+  top: 3506px;
+  background-image: url(images/about-myself/background-about-myself.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.about_myself h1 {
+  width: 50px;
+}
+
+.top {
+  /* Auto Layout */
+
+  display: grid;
+  flex-direction: column;
+
+  /* position */
+  position: static;
+  width: 327px;
+  height: 409px;
+  left: 24px;
+  top: 114px;
+}
+
+.resume_btn {
+  display: flex;
+  padding: 12px;
+  width: 150px;
+  height: 48px;
+  left: 0;
+
+  /* Primary/B400 */
+  color: #396df2;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  order: 4;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.connect_about_my_self {
+  position: static;
+  width: 200px;
+  height: 24px;
+  left: 0;
+  top: 0;
+
+  /* Body / 2 - Bolder */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* Primary/B300 */
+
+  color: #7f8cff;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 8px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  width: 327px;
+  height: 464.15px;
+  left: 0;
+  top: 547px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* position */
+  position: static;
+  width: 327px;
+  left: 100%;
+  top: 0;
+
+  /* other */
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  padding-left: 0;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+}
+
+.arrow {
+  width: 15px;
+  height: 15px;
+  padding-right: 40px;
+}
+
+.skills .no_bullet {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  /* Neutrals/N10 */
+
+  background: #f7f7f9;
+  border-radius: 8px;
+
+  /* size */
+  width: 303px;
+  height: 66.72px;
+
+  /* border */
+  margin: 12px 0;
+}
+
+.skill_frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skill_img {
+  padding-right: 10px;
+  width: 48px;
+  height: 48px;
+}
