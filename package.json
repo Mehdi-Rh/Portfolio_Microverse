@@ -1,0 +1,27 @@
+{
+  "name": "portfolio_microverse",
+  "version": "1.0.0",
+  "description": "This is the first project of Microverse, It's about creating a the first section of the mobile version of the portfolio using a figma template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mehdi-Rh/Portfolio_Microverse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mehdi-Rh/Portfolio_Microverse/issues"
+  },
+  "homepage": "https://github.com/Mehdi-Rh/Portfolio_Microverse#readme",
+  "devDependencies": {
+    "hint": "^6.1.9",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
