@@ -1,3 +1,8 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
 body {
   width: 375px;
   height: 5410px;
@@ -84,8 +89,6 @@ h1 {
   /* Header / 2 */
   display: flex;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -114,8 +117,6 @@ p {
 
   /* Body / 2 */
 
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -143,8 +144,6 @@ p {
 
   /* Body / 2 - Bolder */
 
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -222,8 +221,6 @@ h2 {
   height: 36px;
   left: 0;
   top: 0;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
@@ -264,8 +261,6 @@ h2 {
 
   /* Caption / 1 - Bolder */
 
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -278,8 +273,6 @@ h2 {
 .campany {
   /* Caption / 1 - Bolder */
 
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -302,8 +295,6 @@ h2 {
 
   /* Body / 3 */
 
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 24px;
@@ -350,8 +341,6 @@ h2 {
   margin: 0 8px;
 
   /* font */
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -379,8 +368,6 @@ h2 {
   box-sizing: border-box;
   border-radius: 8px;
   order: 3;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -396,6 +383,7 @@ h2 {
   color: #fff;
 }
 
+/* About myself */
 .about_myself {
   display: grid;
   flex-direction: column;
@@ -456,8 +444,6 @@ h2 {
 
   /* Body / 2 - Bolder */
 
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
