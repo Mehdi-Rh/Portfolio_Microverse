@@ -812,3 +812,86 @@ h2 {
     padding-top: 24px;
     order: 1;
   }
+
+   /* ------ works ------ */
+   .works {
+    display: flex;
+    width: 100%;
+    position: static;
+    gap: 142px;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: row;
+    height: 19%;
+    width: 80%;
+  }
+
+  .inverse {
+    flex-direction: row-reverse;
+  }
+
+  .image {
+    height: 100%;
+  }
+
+  .image img {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* cards */
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 24px;
+  }
+
+  .card h2 {
+    font-size: 40px;
+    height: max-content;
+  }
+
+  .card_head {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .company,
+  .list {
+    font-size: 18px;
+  }
+
+  .p_card {
+    display: flex;
+    justify-items: start;
+    width: 100%;
+    font-size: 16px;
+    position: static;
+    top: 0;
+  }
+
+  .tag {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 24px;
+  }
+
+  .button {
+    width: 124px;
+    height: 48px;
+    margin-top: 40px;
+  }
+  
+}
