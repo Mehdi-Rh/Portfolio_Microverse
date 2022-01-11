@@ -702,3 +702,113 @@ h2 {
 }
 
 /* Contact Form end */
+
+/* ************************************************************************************** */
+
+/* ------------------------- Desktop Version ------------------- */
+@media screen and (min-width: 375px) {
+  header {
+    display: flex;
+    width: 100vw;
+    height: 916px;
+    border-bottom-left-radius: 100px;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .headline {
+    display: flex;
+    background-image: url(images/welcome/background/background-desktop.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    width: 100vw;
+    height: 916px;
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: 768px) {
+    .headline {
+      display: flex;
+      background: url(images/welcome/background/background.svg) center;
+      width: 100vw;
+      background-size: 100vw 80vh;
+      background-repeat: no-repeat;
+    }
+  }
+
+  /* ---- nav bar ---- */
+  .head_desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 72px;
+
+    /* position */
+    position: fixed;
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  .logo {
+    padding-left: 100px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #6070ff;
+  }
+
+  .top_nav {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+  }
+
+  .top_nav a {
+    margin: 0 15px;
+
+    /* font */
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .text {
+    display: grid;
+    position: absolute;
+    left: 18%;
+    top: 25%;
+    width: 50%;
+    order: 0;
+  }
+
+  .text h1,
+  .text p {
+    display: grid;
+    justify-self: stretch;
+    width: 100%;
+    padding: 0;
+  }
+
+  .text p {
+    font-size: 20px;
+    height: 50%;
+  }
+
+  .connect {
+    position: static;
+    left: 0;
+    order: 1;
+  }
+
+  .contacts {
+    position: static;
+    top: 0;
+    padding-top: 24px;
+    order: 1;
+  }
