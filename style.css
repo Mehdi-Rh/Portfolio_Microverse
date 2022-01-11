@@ -534,3 +534,21 @@ h2 {
   width: 48px;
   height: 48px;
 }
+/*contact form section*/
+.footer-section {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+.footer-section h1 {
+  text-align: center;
+} 
+.footer-section p {
+   width: 90vw;
+   text-align: center;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
