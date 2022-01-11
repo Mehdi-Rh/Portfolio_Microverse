@@ -813,8 +813,8 @@ h2 {
     order: 1;
   }
 
-   /* ------ works ------ */
-   .works {
+  /* ------ works ------ */
+  .works {
     display: flex;
     width: 100%;
     position: static;
@@ -985,9 +985,9 @@ h2 {
     left: 0;
   }
 
-   /* contact form */
+  /* contact form */
 
-   .footer-container {
+  .footer-container {
     display: flex;
     width: 100%;
     position: absolute;
@@ -1030,7 +1030,7 @@ h2 {
   .form-input {
     margin-bottom: 15px;
     height: 48px;
-    border-radius: 0;
+    border-radius: 4px;
     font-size: 17px;
     padding: 18px;
     color: #172b4d;
