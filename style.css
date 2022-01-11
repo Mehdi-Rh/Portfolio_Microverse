@@ -984,4 +984,106 @@ h2 {
     margin-left: 0;
     left: 0;
   }
+
+   /* contact form */
+
+   .footer-container {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 4279px;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    align-content: center;
+    background: url(images/Contact_form/CF_background_desktop.svg);
+    background-color: #6070ff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  .contactme-body {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .contact-heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .message-contact {
+    width: 50%;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 18px auto;
+    width: 447px;
+  }
+
+  .form-input {
+    margin-bottom: 15px;
+    height: 48px;
+    border-radius: 0;
+    font-size: 17px;
+    padding: 18px;
+    color: #172b4d;
+    font-family: "poppins", sans-serif;
+    border: 1px solid #cfd8dc;
+  }
+
+  .form-textarea {
+    height: 170px;
+  }
+
+  .contact-submit {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-effect {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid #6070ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    order: 3;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .btn-effect:hover {
+    border: 1px solid #396df2;
+    background: #396df2;
+    color: white;
+    height: 48px;
+    border-radius: 8px;
+  }
+
+  .btn-effect:active {
+    background: navy;
+    color: white;
+    height: 48px;
+    border-radius: 8px;
+  }
+
+  .btn-effect:disabled {
+    border: 2px solid grey;
+    background: white;
+    color: grey;
+    height: 48px;
+    border-radius: 8px;
+  }
 }
