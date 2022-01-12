@@ -249,6 +249,7 @@ li a {
   position: static;
   top: 0;
   height: 100%;
+  gap: 1vh;
 }
 
 h2 {
@@ -285,6 +286,7 @@ h2 {
   align-items: center;
   padding: 0;
   justify-content: space-between;
+  gap: 2vw;
   position: static;
   width: 236px;
   height: 32px;
@@ -708,11 +710,6 @@ h2 {
 
 /* ------------------------- Desktop Version ------------------- */
 @media screen and (min-width: 375px) {
-  body {
-    width: 100vw;
-    margin: 0;
-  }
-
   header {
     display: flex;
     width: 100vw;
@@ -733,6 +730,16 @@ h2 {
     width: 100vw;
     height: 916px;
     align-items: flex-start;
+  }
+
+  @media screen and (max-width: 768px) {
+    .headline {
+      display: flex;
+      background: url(images/welcome/background/background.svg) center;
+      width: 100vw;
+      background-size: 100vw 80vh;
+      background-repeat: no-repeat;
+    }
   }
 
   /* ---- nav bar ---- */
