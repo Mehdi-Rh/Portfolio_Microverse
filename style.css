@@ -363,6 +363,7 @@ h2 {
 
 .tag_list {
   display: flex;
+  flex-wrap: wrap;
   order: 1;
   margin-left: 0;
 }
@@ -400,7 +401,7 @@ h2 {
   width: 124px;
   height: 48px;
   left: 0;
-  margin-top: 15px;
+  margin-top: 2vw;
 }
 
 /* --------------- about my self --------- */
@@ -707,6 +708,11 @@ h2 {
 
 /* ------------------------- Desktop Version ------------------- */
 @media screen and (min-width: 375px) {
+  body {
+    width: 100vw;
+    margin: 0;
+  }
+
   header {
     display: flex;
     width: 100vw;
@@ -723,20 +729,10 @@ h2 {
     background-image: url(images/welcome/background/background-desktop.svg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100% 80%;
+    background-size: 100vw 80vh;
     width: 100vw;
     height: 916px;
     align-items: flex-start;
-  }
-
-  @media screen and (max-width: 768px) {
-    .headline {
-      display: flex;
-      background: url(images/welcome/background/background.svg) center;
-      width: 100vw;
-      background-size: 100vw 80vh;
-      background-repeat: no-repeat;
-    }
   }
 
   /* ---- nav bar ---- */
@@ -750,7 +746,7 @@ h2 {
     /* position */
     position: fixed;
     padding: 15px 0;
-    width: 100%;
+    width: 100vw;
   }
 
   .logo {
@@ -783,7 +779,7 @@ h2 {
     position: absolute;
     left: 18%;
     top: 25%;
-    width: 50%;
+    width: 50vw;
     order: 0;
   }
 
@@ -791,13 +787,13 @@ h2 {
   .text p {
     display: grid;
     justify-self: stretch;
-    width: 100%;
+    width: 70vw;
     padding: 0;
   }
 
   .text p {
     font-size: 20px;
-    height: 50%;
+    height: 20%;
   }
 
   .connect {
@@ -816,7 +812,7 @@ h2 {
   /* ------ works ------ */
   .works {
     display: flex;
-    width: 100%;
+    width: 100vw;
     position: static;
     gap: 142px;
   }
@@ -825,7 +821,8 @@ h2 {
     display: flex;
     flex-direction: row;
     height: 19%;
-    width: 80%;
+    width: 80vw;
+    margin: auto;
   }
 
   .inverse {
@@ -838,16 +835,15 @@ h2 {
 
   .image img {
     height: 100%;
-    width: 100%;
+    width: 40vw;
   }
 
   /* cards */
   .card {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    padding: 24px;
+    flex-flow: column wrap;
+    width: 40vw;
+    padding: 2vw;
   }
 
   .card h2 {
@@ -862,9 +858,9 @@ h2 {
 
   .list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    gap: 12px;
+    width: 25vw;
   }
 
   .company,
@@ -873,12 +869,8 @@ h2 {
   }
 
   .p_card {
-    display: flex;
-    justify-items: start;
-    width: 100%;
+    width: 25vw;
     font-size: 16px;
-    position: static;
-    top: 0;
   }
 
   .tag {
@@ -891,14 +883,14 @@ h2 {
   .button {
     width: 124px;
     height: 48px;
-    margin-top: 40px;
+    margin-top: 5vw;
   }
 
   /* ----------- About Myself ----------- */
   .about_myself {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     top: 3611px;
   }
@@ -909,7 +901,7 @@ h2 {
     justify-content: flex-start;
     width: 40%;
     height: 20%;
-    margin: 142px;
+    margin: 10%;
     padding-left: 0;
     margin-right: 0;
   }
@@ -937,7 +929,7 @@ h2 {
   }
 
   .skill_div {
-    width: 100%;
+    width: 50vw;
     padding-left: 20px;
   }
 
@@ -947,11 +939,11 @@ h2 {
     align-items: flex-start;
     position: static;
     padding-left: 0;
-    width: 100%;
-    margin-top: 142px;
+    width: 45vw;
+    margin-top: 10vw;
   }
 
-  .skills li {
+  .li_accordion {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -960,7 +952,7 @@ h2 {
 
   .skills .no_bullet {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     top: 72px;
     left: 0;
   }
@@ -968,10 +960,9 @@ h2 {
   .skill_list {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    width: 50%;
-    height: 70%;
+    width: auto;
+    height: auto;
     padding: 20px;
     margin: 12px;
     margin-left: 0;
@@ -979,7 +970,7 @@ h2 {
   }
 
   .accordion {
-    width: 80%;
+    width: 40vw;
     padding-left: 0;
     margin-left: 0;
     left: 0;
@@ -989,7 +980,7 @@ h2 {
 
   .footer-container {
     display: flex;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     left: 0;
     top: 4279px;
@@ -1002,7 +993,7 @@ h2 {
     background-color: #6070ff;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 90vw;
   }
 
   .contactme-body {
@@ -1016,7 +1007,7 @@ h2 {
   }
 
   .message-contact {
-    width: 50%;
+    width: 50vw;
   }
 
   .contact-form {
@@ -1024,7 +1015,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     margin: 18px auto;
-    width: 447px;
+    width: 60vw;
   }
 
   .form-input {
