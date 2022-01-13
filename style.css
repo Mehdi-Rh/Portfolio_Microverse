@@ -716,7 +716,23 @@ h2 {
     height: 916px;
     border-bottom-left-radius: 100px;
   }
-
+  .head_desktop {
+    animation: 3s 1 fadeIn;
+    animation-delay: 0.5s;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    50% {
+     opacity: 0.5;
+     font-size: 50px;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
   .bars {
     display: none;
   }
@@ -754,6 +770,20 @@ h2 {
     position: fixed;
     padding: 15px 0;
     width: 100vw;
+    animation: 3s 1 fadeIn;
+    animation-delay: 0.5s;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    50% {
+     opacity: 0.5;
+     font-size: 50px;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   .logo {
