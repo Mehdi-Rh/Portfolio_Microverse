@@ -788,6 +788,18 @@ h2 {
     top: 25%;
     width: 50vw;
     order: 0;
+    animation-duration: 2s;
+    animation-name: header;
+  }
+
+  @keyframes header {
+    from {
+      margin-left: 100%;
+    }
+
+    to {
+      margin-left: 0;
+    }
   }
 
   .text h1,
@@ -796,11 +808,17 @@ h2 {
     justify-self: stretch;
     width: 70vw;
     padding: 0;
+    transition: color 1s;
   }
 
   .text p {
     font-size: 20px;
     height: 20%;
+  }
+
+  .text h1:hover,
+  .text p:hover {
+    color: red;
   }
 
   .connect {
@@ -918,7 +936,7 @@ h2 {
     margin-right: 0;
   }
 
-  .top p {
+  .about_p {
     height: 50%;
   }
 
