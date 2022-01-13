@@ -732,7 +732,7 @@ h2 {
     align-items: flex-start;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     .headline {
       display: flex;
       background: url(images/welcome/background/background.svg) center;
@@ -865,9 +865,8 @@ h2 {
 
   .list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    width: 25vw;
+    width: 30vw;
   }
 
   .company,
@@ -891,6 +890,12 @@ h2 {
     width: 124px;
     height: 48px;
     margin-top: 5vw;
+  }
+
+  @media screen and (max-width: 900px) {
+    .button {
+      margin-top: 0;
+    }
   }
 
   /* ----------- About Myself ----------- */
