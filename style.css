@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -17,7 +16,7 @@ a {
 header {
   background: white;
   height: 718px;
-  width: 375px;
+  width: 100vw;
   border-bottom-left-radius: 100px;
 }
 
@@ -29,33 +28,31 @@ header {
 .home {
   display: flex;
   flex-direction: column;
-  width: 375px;
 }
 
 .bars {
   display: flex;
   align-items: center;
-  width: 375px;
-  justify-content: space-around;
+  justify-content: space-between;
   background: white;
+  padding: 0 3vw;
 }
 
 .toolbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  padding: 0 5vw;
+  width: 90vw;
 }
 
 .left {
-  width: 45%;
   right: 12px;
 }
 
 .right {
   display: flex;
   justify-content: flex-end;
-  width: 45%;
 }
 
 .logo {
@@ -73,20 +70,21 @@ header {
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  width: 375px;
+  width: 100vw;
   background: url("images/welcome/background/background.svg");
+  background-size: cover;
   background-position-y: 50px;
   background-repeat: no-repeat;
 }
 
 .text {
-  padding: 80px 24px;
+  padding: 100px 5vw;
   padding-bottom: 0;
 }
 
 .btn {
   border: none;
-  padding: 12px 16px;
+  padding: 1vw 1.5vw;
   cursor: pointer;
   background-color: transparent;
 }
@@ -94,9 +92,8 @@ header {
 /* Highlight */
 h1 {
   position: static;
-  width: 327px;
   height: 150px;
-  left: 24px;
+  left: 2vw;
   top: 114px;
 
   /* Header / 2 */
@@ -124,9 +121,8 @@ h1 {
 p {
   /* Primary Text */
   position: static;
-  width: 327px;
   height: 146px;
-  left: 24px;
+  left: 2vw;
   top: 276px;
 
   /* Body / 2 */
@@ -148,7 +144,7 @@ p {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 12px 0;
+  margin: 1vw 0;
   padding-top: 12px;
 }
 
@@ -156,9 +152,7 @@ p {
   display: flex;
   align-self: flex-start;
   position: absolute;
-  width: 200px;
   height: 24px;
-  left: 16px;
   top: 460px;
 
   /* Body / 2 - Bolder */
@@ -178,7 +172,6 @@ p {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0 8px;
 }
 
 .contacts {
@@ -187,7 +180,6 @@ p {
   align-items: flex-start;
   justify-content: space-between;
   position: absolute;
-  left: 16px;
   top: 500px;
 }
 
@@ -211,26 +203,20 @@ li a {
   display: grid;
   flex-direction: column;
   align-items: center;
-  padding: 114px 24px;
-  position: absolute;
-  width: 375px;
-  height: 2788px;
-  left: 0;
-  top: 718px;
+  padding: 114px 5vw;
   margin: 0;
+  gap: 52px;
 }
 
 .project {
   /* Auto Layout */
-  display: grid;
+  display: flex;
   flex-direction: column;
   align-items: start;
   justify-items: start;
-  padding: 16px;
-  position: static;
-  width: 327px;
+  padding: 5vw;
+  width: 100%;
   height: 596px;
-  top: 754px;
 
   /* Neutrals/N0 */
   background: #fff;
@@ -241,29 +227,37 @@ li a {
   border-radius: 16px;
 }
 
+.image {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: 220px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: flex-start;
-  position: static;
-  top: 0;
-  height: 100%;
   gap: 1vh;
+  padding-top: 1rem;
+}
+
+.card_head {
+  display: flex;
+  flex-flow: column;
 }
 
 h2 {
   display: flex;
-  position: static;
-  width: 295px;
-  height: 36px;
+  width: 70vw;
   left: 0;
-  top: 0;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
-  line-height: 44px;
 
   /* or 137% */
 
@@ -276,30 +270,21 @@ h2 {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 12px 0;
 }
 
 .list {
   /* Auto Layout */
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 0;
   justify-content: space-between;
   gap: 2vw;
-  position: static;
-  width: 236px;
-  height: 32px;
-  left: 0;
-  top: 48px;
+  width: 90%;
 
   /* Inside Auto Layout */
 
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 12px 0;
-  margin-bottom: 0;
 
   /* Caption / 1 - Bolder */
 
@@ -307,7 +292,6 @@ h2 {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
-  line-height: 16px;
 }
 
 .list_bullet {
@@ -332,9 +316,8 @@ h2 {
 
 .p_card {
   /* Primary Text */
-  position: static;
   height: 76px;
-  width: 295px;
+  width: 95%;
   top: 0;
   left: 0;
   padding: 0;
@@ -358,7 +341,6 @@ h2 {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 12px 0;
 }
 
 /* tag */
@@ -409,17 +391,14 @@ h2 {
 /* --------------- about my self --------- */
 .about_myself {
   /* Base about my self */
-  display: flex;
-  position: absolute;
-  width: 375px;
-  height: 1263px;
-  top: 3506px;
+  width: 100vw;
   left: 0;
 
   /* Neutrals/N0 */
 
   background: white;
   border-top-right-radius: 80px;
+  padding: 5rem 0;
 }
 
 .top {
@@ -427,49 +406,28 @@ h2 {
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 50px;
-  padding-right: 0;
-  position: static;
-  width: 100vw;
-  height: 409px;
-  left: 24px;
-  top: 114px;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 24px 0;
+  padding: 5vw;
 }
 
 .about_myself h2 {
-  width: 40px;
-  position: static;
-  height: 101px;
+  width: 40vw;
   font-size: 40px;
 }
 
-.about_myself p {
+.top p {
   font-size: 17px;
-  width: 100%;
 }
 
 .resume_btn {
   display: flex;
   padding: 12px;
   width: 150px;
-  height: 48px;
   left: 0;
 }
 
 .connect_about_my_self {
-  position: static;
   width: 200px;
-  height: 24px;
   left: 0;
-  top: 0;
 
   /* Body / 2 - Bolder */
 
@@ -482,34 +440,26 @@ h2 {
   /* Primary/B300 */
 
   color: #7f8cff;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 8px;
-  margin-left: 0;
 }
 
 .contacts_about_my_self .no_bullet {
   display: flex;
-  justify-content: space-around;
-  margin: 30px 0;
+  margin: 20px 0;
+}
+
+.contacts_about_my_self .no_bullet li {
+  padding: 5px;
 }
 
 /* ----- skill div ------ */
 .skills {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  width: 327px;
-  height: 464.15px;
+  width: 90vw;
   left: 24px;
-  top: 547px;
   border: 0;
-  padding: 0;
-  margin: 24px 0;
+  padding: 24px 0;
+  background: white;
 }
 
 .accordion {
@@ -517,8 +467,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: static;
-  width: 327px;
+  width: 80vw;
   height: 72px;
   left: 0;
   border-bottom: 1px solid lightgray;
@@ -540,7 +489,6 @@ h2 {
 .skills .no_bullet {
   display: flex;
   flex-direction: column;
-  top: 72px;
 }
 
 .skill_list {
@@ -555,8 +503,7 @@ h2 {
   border-radius: 8px;
 
   /* size */
-  width: 303px;
-  height: 66.72px;
+  width: 80vw;
 
   /* border */
   margin: 12px 0;
@@ -577,10 +524,7 @@ h2 {
 /* ----------------- Contact Form ------------------- */
 .footer-container {
   background-color: #fff;
-  position: absolute;
-  width: 375px;
-  height: 779px;
-  top: 4700px;
+  width: 100vw;
   left: 0;
 }
 
@@ -588,8 +532,7 @@ h2 {
   background: url(images/Contact_form/CF_backgroun.svg) right 70px no-repeat;
   border-top-left-radius: 100px;
   background-color: #6070ff;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
   padding-bottom: 50px;
 }
 
@@ -630,7 +573,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   margin: 18px auto;
-  width: 327px;
+  width: 90vw;
 }
 
 .form-input {
@@ -709,7 +652,11 @@ h2 {
 /* ************************************************************************************** */
 
 /* ------------------------- Desktop Version ------------------- */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 992px) {
+  body {
+    height: auto;
+  }
+
   header {
     display: flex;
     width: 100vw;
@@ -730,16 +677,6 @@ h2 {
     width: 100vw;
     height: 916px;
     align-items: flex-start;
-  }
-
-  @media screen and (max-width: 900px) {
-    .headline {
-      display: flex;
-      background: url(images/welcome/background/background.svg) center;
-      width: 100vw;
-      background-size: 100vw 80vh;
-      background-repeat: no-repeat;
-    }
   }
 
   /* ---- nav bar ---- */
@@ -819,17 +756,14 @@ h2 {
   /* ------ works ------ */
   .works {
     display: flex;
-    width: 100vw;
-    position: static;
-    gap: 142px;
+    gap: 7rem;
   }
 
   .project {
     display: flex;
     flex-direction: row;
-    height: 19%;
-    width: 80vw;
-    margin: auto;
+    padding: 2vw 2vh;
+    height: auto;
   }
 
   .inverse {
@@ -838,29 +772,31 @@ h2 {
 
   .image {
     height: 100%;
+    width: 60vw;
   }
 
   .image img {
-    height: 100%;
-    width: 40vw;
+    height: auto;
   }
 
   /* cards */
   .card {
     display: flex;
     flex-flow: column wrap;
-    width: 40vw;
-    padding: 2vw;
+    width: 50vw;
+    padding: 2vh 2vw;
   }
 
   .card h2 {
     font-size: 40px;
     height: max-content;
+    width: 30vw;
   }
 
   .card_head {
     display: flex;
     flex-direction: column;
+    width: 30vw;
   }
 
   .list {
@@ -889,7 +825,7 @@ h2 {
   .button {
     width: 124px;
     height: 48px;
-    margin-top: 5vw;
+    margin-top: 1vh;
   }
 
   @media screen and (max-width: 900px) {
@@ -903,17 +839,14 @@ h2 {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    position: absolute;
-    top: 3611px;
   }
 
   .top {
-    padding-top: 0;
     display: flex;
     justify-content: flex-start;
     width: 40%;
     height: 20%;
-    margin: 10%;
+    margin: 0 10%;
     padding-left: 0;
     margin-right: 0;
   }
@@ -940,11 +873,6 @@ h2 {
     margin-top: 0;
   }
 
-  .skill_div {
-    width: 50vw;
-    padding-left: 20px;
-  }
-
   .skills {
     display: flex;
     margin-right: 0;
@@ -952,11 +880,10 @@ h2 {
     position: static;
     padding-left: 0;
     width: 45vw;
-    margin-top: 10vw;
+    background: none;
   }
 
   .li_accordion {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -965,8 +892,6 @@ h2 {
   .skills .no_bullet {
     display: flex;
     flex-flow: row wrap;
-    top: 72px;
-    left: 0;
   }
 
   .skill_list {
@@ -993,9 +918,7 @@ h2 {
   .footer-container {
     display: flex;
     width: 100vw;
-    position: absolute;
     left: 0;
-    top: 4279px;
   }
 
   .contact-wrapper {
