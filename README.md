@@ -8,9 +8,6 @@ Additional description about the project and its features.
 - HTML & CSS
 - VsCode
 
-## Live Demo
-
-[Live Demo Link](https://mehdi-rh.github.io/)
 
 ## Authors
 
