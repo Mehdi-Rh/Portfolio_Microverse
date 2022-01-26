@@ -1,3 +1,4 @@
+/* ------------------------- Desktop Version ------------------- */
 @media screen and (min-width: 992px) {
   body {
     height: auto;
@@ -270,7 +271,7 @@
   .contact-wrapper {
     display: flex;
     align-content: center;
-    background: url(images/Contact_form/CF_background_desktop.svg);
+    background: url(../images/Contact_form/CF_background_desktop.svg);
     background-color: #6070ff;
     background-position: center center;
     background-repeat: no-repeat;
