@@ -14,7 +14,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio_mobile</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles/mobile.css">
+	<link rel="stylesheet" href="styles/desktop.css">
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <body>
@@ -31,27 +32,23 @@
 				</div>
 			</div>
 		</div>
-	
-		
-		<div class="headline">
-			<!-- Mobile Navbar-->
-			<nav class="toolbar">
-				<a class="logo left" href="#">Mehdi Rahal</a>
-				<button type="button" class="btn hamburger right">
-					<img src="images/welcome/Enabled.png" alt="enabled">
-				</button>
-			</nav>
-			<!-- Desktop Navbar-->
-			<div class="head_desktop">
-				<a class="logo" href="#">Mehdi Rahal</a>
-				<div class="top_nav">
-					<nav >
-						<a href="#">Portfolio</a>
-						<a href="#">About</a>
-						<a href="#">Contacts</a>
-					</nav>
-				</div>
+ 
+		<nav class="navbar">
+			<a href="#" class="logo">Mehdi Rahal</a>
+			<ul class="nav-menu ">
+				<li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+				<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+			</ul>
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
 			</div>
+		</nav>
+
+		<div class="headline">
+
 			<div class="text">
 				<h1>I’m Mehdi <br>Glad to see you!</h1>
 				<p>I’m a software developer! I can help you build a product ,
@@ -75,7 +72,7 @@
 		</div>
 	</header>
 		
-	<section class="works">
+	<section id="portfolio" class="works">
 		<!--1st card-->
 		<div class="project">
 			<div class="image">
@@ -174,7 +171,7 @@
 		</div>
 	</section>
 	<!-- About my self section-->
-	<section class="about_myself">
+	<section id="about" class="about_myself">
 			<div class="top">
 				<div>
 					<h2>About Myself</h2>
@@ -236,11 +233,11 @@
 		
 	</section>
 	<!-- Contact form -->
-	<footer class="footer-container">
+	<footer id="contacts" class="footer-container">
 		<div class="contact-wrapper">
 		  <div class="contact-wrapper-two">
 				<div class="contactme-body">
-					<h1 class="contact-heading">Contact me</h1>
+					<h2 class="contact-heading">Contact me</h2>
 					<p class="message-contact">
 					If you have an application you are interested in developing, a
 					feature that you need built or a project that needs coding. I’d
@@ -278,10 +275,9 @@
 					Get in touch
 					</button>
 				</form>
-
 		  </div>
 		</div>
-
 	</footer>
+	<script src="script.js"></script>
 </body>
 </html>
