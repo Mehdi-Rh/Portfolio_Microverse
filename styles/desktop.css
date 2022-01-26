@@ -15,6 +15,10 @@
     display: none;
   }
 
+  .bars.active {
+    display: none;
+  }
+
   .headline {
     display: flex;
     background-image: url(../images/welcome/background/background-desktop.svg);
@@ -27,6 +31,22 @@
   }
 
   /* ------- Navbar START -------- */
+  .navbar {
+    display: flex;
+    grid-auto-flow: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 100%;
+    align-items: center;
+    padding: 0 10vw;
+    height: 5rem;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   .nav-menu {
     position: static;
     left: 0;
@@ -37,6 +57,13 @@
     background-color: white;
     width: auto;
     text-align: center;
+  }
+
+  .nav-item a {
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .hamburger {
