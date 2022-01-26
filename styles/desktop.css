@@ -26,44 +26,24 @@
     align-items: flex-start;
   }
 
-  /* ---- nav bar ---- */
-  .head_desktop {
+  /* ------- Navbar START -------- */
+  .nav-menu {
+    position: static;
+    left: 0;
+    top: 0;
+    gap: 5rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
     background-color: white;
-    height: 72px;
-
-    /* position */
-    position: fixed;
-    padding: 15px 0;
-    width: 100vw;
+    width: auto;
+    text-align: center;
   }
 
-  .logo {
-    padding-left: 100px;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;
-    color: #6070ff;
+  .hamburger {
+    display: none;
   }
 
-  .top_nav {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 100px;
-  }
-
-  .top_nav a {
-    margin: 0 15px;
-
-    /* font */
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    color: #344563;
-  }
+  /* ------- Navbar END -------- */
 
   .text {
     display: grid;

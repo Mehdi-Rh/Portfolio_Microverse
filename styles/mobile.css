@@ -20,9 +20,7 @@ header {
   border-bottom-left-radius: 100px;
 }
 
-.head_desktop {
-  display: none;
-}
+
 
 /* Header */
 .home {
@@ -38,14 +36,6 @@ header {
   padding: 0 3vw;
 }
 
-.toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5vw;
-  width: 90vw;
-}
-
 .left {
   right: 12px;
 }
@@ -54,6 +44,64 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+
+/* ----------- Navbar START --------------- */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem ;
+}
+
+.nav-menu {
+  position:fixed;
+  left: -120%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #6070FF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: blue;
+}
+
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+/* ----------- Navbar end ---------------*/
 
 .logo {
   font-family: "Poppins", sans-serif;
