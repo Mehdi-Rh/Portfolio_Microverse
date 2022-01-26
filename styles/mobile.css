@@ -8,12 +8,12 @@ body {
   background: #e5e5e5;
 }
 
-li a {
-  padding: 5px;
-}
-
 a {
   text-decoration: none;
+}
+
+li a {
+  padding: 5px;
 }
 
 /********** Welcome ********/
@@ -72,6 +72,7 @@ li {
   height: 3px;
   margin: 5px auto;
   background-color: #6070ff;
+  border-radius: 20px;
 }
 
 /* --- active class --- */
