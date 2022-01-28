@@ -125,7 +125,7 @@ function popUpMobile(cardNbr) {
 
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
-    (window.innerWidth >= 992) ? (popupDesk(i)) : (popUpMobile(i));
+    if (window.innerWidth >= 992) { popupDesk(i); } else { popUpMobile(i); }
     document.body.style.overflow = 'hidden';
   });
 }
