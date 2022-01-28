@@ -96,7 +96,7 @@
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 7%;
-  gap: 10px
+  gap: 10px;
 }
 
 .modal-btns button a {
