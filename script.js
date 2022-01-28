@@ -17,4 +17,3 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   bars.classList.remove('active');
   headline.classList.remove('active');
 }));
-/* -------------------------------------------- */
