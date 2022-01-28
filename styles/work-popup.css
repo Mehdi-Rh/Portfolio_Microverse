@@ -214,8 +214,11 @@
   }
 
   .modal-btns button {
-    height: 35px;
+    min-height: 45px;
+    block-size: fit-content;
     padding: 5px 5px;
+    max-width: 100px;
+
   }
 
   .btn-effect {

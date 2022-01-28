@@ -81,7 +81,7 @@ function popupDesk(cardNbr) {
 }
 
 function popUpMobile(cardNbr) {
-  popup.style.display = 'block';
+  popup.style.display = 'inline';
   work.appendChild(popup);
   popup.innerHTML = `
     <div class="modal">

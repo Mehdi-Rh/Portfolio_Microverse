@@ -150,7 +150,6 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  position: absolute;
   width: 100vw;
   background: url("../images/welcome/background/background.svg");
   background-size: cover;
@@ -172,10 +171,7 @@ li {
 
 /* Highlight */
 h1 {
-  position: static;
-  height: 150px;
-  left: 2vw;
-  top: 114px;
+
 
   /* Header / 2 */
   display: flex;
@@ -201,10 +197,6 @@ h1 {
 
 p {
   /* Primary Text */
-  position: static;
-  height: 146px;
-  left: 2vw;
-  top: 276px;
 
   /* Body / 2 */
 
@@ -232,9 +224,6 @@ p {
 .connect {
   display: flex;
   align-self: flex-start;
-  position: absolute;
-  height: 24px;
-  top: 460px;
 
   /* Body / 2 - Bolder */
 
@@ -253,6 +242,7 @@ p {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin: 10px 0;
 }
 
 .contacts {
@@ -260,8 +250,6 @@ p {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  position: absolute;
-  top: 500px;
 }
 
 ul {
@@ -393,8 +381,7 @@ h2 {
 
 .p_card {
   /* Primary Text */
-  height: 76px;
-  width: 95%;
+  block-size: fit-content;
   top: 0;
   left: 0;
   padding: 0;
