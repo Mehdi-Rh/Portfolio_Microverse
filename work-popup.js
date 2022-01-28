@@ -72,13 +72,12 @@ function popupDesk(cardNbr) {
           </div>  
         </div>  
       </div>;`;
-    document.addEventListener('click', (event) => {
-      if (event.target.id === 'popup-close') {
-        popup.style.display = 'none';
-        document.body.style.overflow = "scroll";
-
-      }
-  }); 
+  document.addEventListener('click', (event) => {
+    if (event.target.id === 'popup-close') {
+      popup.style.display = 'none';
+      document.body.style.overflow = 'scroll';
+    }
+  });
 }
 
 function popUpMobile(cardNbr) {
@@ -119,14 +118,14 @@ function popUpMobile(cardNbr) {
   document.addEventListener('click', (event) => {
     if (event.target.id === 'popup-close') {
       popup.style.display = 'none';
-      document.body.style.overflow = "scroll";
+      document.body.style.overflow = 'scroll';
     }
   });
 }
 
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
-    window.innerWidth >= 992 ? popupDesk(i): popUpMobile(i);
-    document.body.style.overflow = "hidden";
+    (window.innerWidth >= 992) ? (popupDesk(i)) : (popUpMobile(i));
+    document.body.style.overflow = 'hidden';
   });
 }
