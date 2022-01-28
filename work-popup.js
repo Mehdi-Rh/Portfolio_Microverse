@@ -127,11 +127,9 @@ function popUpMobile(cardNbr) {
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
     popupDesk(i);
-    document.body.style.overflow = "hidden";
 
   });
   buttons[i].addEventListener('click', () => {
     popUpMobile(i);
-    document.body.style.overflow = "hidden";
   });
 }
