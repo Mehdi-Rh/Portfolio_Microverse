@@ -124,6 +124,7 @@
   text-align: center;
   width: 200px;
 }
+
 @media only screen and (max-width: 992px) {
   .modal {
     background: white;
@@ -216,6 +217,7 @@
     height: 35px;
     padding: 5px 5px;
   }
+
   .btn-effect {
     text-align: center;
     width: 200px;
