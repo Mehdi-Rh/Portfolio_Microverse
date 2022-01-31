@@ -49,6 +49,13 @@ header {
 
 /* ----------- Navbar START --------------- */
 
+.header{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+}
+
 li {
   list-style: none;
 }
@@ -61,7 +68,6 @@ li {
 }
 
 .hamburger {
-  position: fixed;
   right: 1.5rem;
   cursor: pointer;
 }
