@@ -1,3 +1,4 @@
+/* ------------- Mobile Menu ------------- */
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const bars = document.querySelector('.bars');
@@ -16,3 +17,4 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   bars.classList.remove('active');
   headline.classList.remove('active');
 }));
+/* -------------------------------------------- */

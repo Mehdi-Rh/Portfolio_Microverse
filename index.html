@@ -16,6 +16,13 @@
 	<title>Portfolio_mobile</title>
 	<link rel="stylesheet" href="styles/mobile.css">
 	<link rel="stylesheet" href="styles/desktop.css">
+	<link rel="stylesheet" href="styles/work-popup.css">
+	<link
+rel="stylesheet"
+href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+crossorigin="anonymous"
+/> 
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <body>
@@ -34,16 +41,18 @@
 		</div>
  
 		<nav class="navbar">
-			<a href="#" class="logo">Mehdi Rahal</a>
-			<ul class="nav-menu ">
-				<li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-				<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-				<li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-			</ul>
-			<div class="hamburger">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
+			<div class="header">
+				<a href="#" class="logo">Mehdi Rahal</a>
+				<ul class="nav-menu ">
+					<li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+					<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
 			</div>
 		</nav>
 
@@ -94,7 +103,7 @@
 					<li class="tag">css</li>
 					<li class="tag">javascript</li>
 				</ul>
-				<a href="#" class="project_btn  btn-effect">See Project</a>
+				<button  data-modal-target=".project1" class="project_btn  btn-effect ">See Project</button>
 			</div>
 		</div>
 		<!--2st card-->
@@ -118,7 +127,7 @@
 					<li class="tag">css</li>
 					<li class="tag">javascript</li>
 				</ul>
-				<a href="#" class="project_btn btn-effect">See Project</a>
+				<button  class="project_btn  btn-effect ">See Project</button>
 			</div>
 		</div>
 		<!--3st card-->
@@ -142,7 +151,7 @@
 					<li class="tag">css</li>
 					<li class="tag">javascript</li>
 				</ul>
-				<a href="#" class="project_btn  btn-effect">See Project</a>
+				<button  class="project_btn  btn-effect ">See Project</button>
 			</div>
 		</div>
 		<!--4st card-->
@@ -166,7 +175,7 @@
 					<li class="tag">css</li>
 					<li class="tag">javascript</li>
 				</ul>
-				<a href="#" class="project_btn  btn-effect">See Project</a>
+				<button  class="project_btn  btn-effect">See Project</button>
 			</div>
 		</div>
 	</section>
@@ -279,5 +288,8 @@
 		</div>
 	</footer>
 	<script src="script.js"></script>
+	<script src="work-popup.js"></script>
+
+	
 </body>
 </html>
