@@ -32,13 +32,8 @@
 
   /* ------- Navbar START -------- */
   .navbar {
-    display: flex;
-    grid-auto-flow: row;
-    justify-content: space-between;
-    align-content: flex-start;
-    width: 100%;
-    align-items: center;
-    padding: 0 10vw;
+    width: 80%;
+    padding: 0 10%;
     height: 5rem;
   }
 
