@@ -1,0 +1,11 @@
+
+  
+.modal {
+  background: no-repeat center/98% url(images/two-circles-header.png) #191765;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
