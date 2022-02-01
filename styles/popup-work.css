@@ -1,11 +1,36 @@
-
-  
 .modal {
-  background: no-repeat center/98% url(images/two-circles-header.png) #191765;
+  background: #fff;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
   overflow-y: scroll;
+}
+
+.modal-head {
+  padding: 18px 5%;
+}
+
+.modal-top {
+  display: flex;
+  align-items: center;
+  
+}
+
+.list-pop {
+  padding: 22px 0;
+  display: flex;
+}
+
+.date {
+}
+
+.modal-bottom p {
+  padding: 12px 0 16px 0;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
 }

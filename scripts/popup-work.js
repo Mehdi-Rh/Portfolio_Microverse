@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'Tonic',
     src: './images/works/Snapshoot-Portfolio-1.png',
-    description : 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     tags : ['html', 'css', 'javascript'],
     seeLivelink: '#',
     seeSourceLink: '#'
@@ -10,7 +10,7 @@ const projects = [
   {
     title: 'Multi-Post Stories',
     src: './images/works/Snapshoot-Portfolio-2.png',
-    description : 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     tags : ['html', 'css', 'javascript'],
     seeLivelink: '#',
     seeSourceLink: '#' 
@@ -18,7 +18,7 @@ const projects = [
   {
     title: 'Tonic',
     src: './images/works/Snapshoot-Portfolio-3.png',
-    description : 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     tags : ['html', 'css', 'javascript'],
     seeLivelink: '#',
     seeSourceLink: '#' 
@@ -26,7 +26,7 @@ const projects = [
   {
     title: 'Multi-Post Stories',
     src: './images/works/Snapshoot-Portfolio-4.png',
-    description : 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     tags : ['html', 'css', 'javascript'],
     seeLivelink: '#',
     seeSourceLink: '#' 
@@ -42,15 +42,15 @@ function popupShow(cardNbr) {
   popup.style.display = ('block');
   work.appendChild(popup);
   popup.innerHTML = `
-    <div class='modal-head'
+    <div class='modal-head'>
       <div class="modal-top">
         <h2>${projects[cardNbr].title}</h2>
         <i id="closeBtn" class="fas fa-times" alt='#'></i>
       </div>
-      <ul class="list">
+      <ul class="list list-pop">
         <li class="company no_bullet">CANOPY</li>
-        <li class="list_bullet">Back End Dev</li>
-        <li class="list_bullet">2015</li>
+        <li class="list_bullet date">Back End Dev</li>
+        <li class="list_bullet date">2015</li>
       </ul>
       <div class="image">
         <img src="${projects[cardNbr].src}" alt="p1">
@@ -64,8 +64,8 @@ function popupShow(cardNbr) {
             <li class="tag">${projects[cardNbr].tags[2]}</li>
           </ul>
           <div class='modal-buttons'>
-            <button href="${projects[cardNbr].seeLivelink}"class="btn-effect ">See Project</button>
-            <button href="${projects[cardNbr].seeSourceLink} class="btn-effect ">See Project</button>
+            <button href="${projects[cardNbr].seeLivelink}" class="btn-effect">See Project</button>
+            <button href="${projects[cardNbr].seeSourceLink}" class="btn-effect">See Project</button>
           </div>
         </div>
       </div>
