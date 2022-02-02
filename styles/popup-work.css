@@ -1,24 +1,20 @@
 .modal {
-  overflow-y: scroll;
+  position: fixed;
+  top:0;
+  left: 0;
+  margin: 2.5vh 2vw;
+  z-index: 10;
+  height: fit-content;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 16px;
+
 }
+
 .modal-body {
   background: #fff;
-  position: fixed;
-  bottom: 2.5vh;
-
-  top: 2.5vh;
-  left: 2.5vw;
-  overflow-y:scroll;
-
-  right: 2.5vw;
-  max-width: 1414px !important;
-
-  max-height: 100%;
-  min-height: 100%;
-
-  border-radius: 16px;
   z-index: 10;
-
+  height: 95vh;
 
 }
 
@@ -60,9 +56,10 @@
 
 .modal-buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   border-top: 1px solid #EBECF0;
-  padding-top: 3vw;
+  padding: 3vw;
+  gap: 3vw; 
 }
 
 .pop_btn {
@@ -70,6 +67,7 @@
   width: auto;
   height: auto;
   display: flex;
+  justify-items: flex-start;
   gap: 10px;
 }
 
