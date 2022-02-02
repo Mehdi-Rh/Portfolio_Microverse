@@ -376,6 +376,7 @@ h2 {
 
 .list_bullet {
   color: #7a869a;
+  list-style-type:disc;
 }
 
 .company {

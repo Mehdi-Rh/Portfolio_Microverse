@@ -1,21 +1,17 @@
 .modal {
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   margin: 2.5vh 2vw;
   z-index: 10;
-  height: fit-content;
   overflow-y: auto;
   background: #fff;
   border-radius: 16px;
-
 }
 
 .modal-body {
-  background: #fff;
   z-index: 10;
   height: 95vh;
-
 }
 
 .no-scroll-bg {
@@ -25,6 +21,8 @@
 
 .list-pop {
   padding: 1rem 0;
+  list-style-type: circle;
+
 }
 
 .modal-head {
@@ -59,7 +57,7 @@
   justify-content: flex-start;
   border-top: 1px solid #EBECF0;
   padding: 3vw;
-  gap: 3vw; 
+  gap: 3vw;
 }
 
 .pop_btn {
@@ -82,18 +80,39 @@
   background-color: #C1C7D0;
   mix-blend-mode: multiply;
   pointer-events: all;
-
 }
 
 /* Desktop version */
 @media screen and (min-width: 992px) {
-
   .modal {
-    top: 5vh;
-    left: 2.5vw;
-    right: 2.5vw;
-    border-radius: 16px;
-    z-index: 10;
+    margin: 5vh 5vw;
   }
 
+  .modal-body {
+    background: #fff;
+    height: 90vh;
+  }
+
+  .modal-head img{
+    width: 100%;
+
+  }
+
+  .modal-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .modal-bottom p {
+    width: 50%;
+  }
+
+  .modal-footer {
+    margin-left: 2rem;
+  }
+
+  .modal-buttons {
+    padding-left: 0;
+  }
 }

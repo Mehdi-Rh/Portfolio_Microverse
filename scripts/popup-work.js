@@ -62,9 +62,7 @@ function popupShow(cardNbr) {
           <li class="list_bullet date">Back End Dev</li>
           <li class="list_bullet date">2015</li>
         </ul>
-        <div class="image">
-          <img src="${projects[cardNbr].src}" alt="p1">
-        </div>
+        <img src="${projects[cardNbr].src}" alt="p1">
         <div class="modal-bottom">
           <p>${projects[cardNbr].description}</p>
           <div class='modal-footer'>
@@ -86,6 +84,7 @@ function popupShow(cardNbr) {
     if (event.target.id === "closeBtn") {
       popup.style.display = 'none'
       overlay.style.display = 'none';
+      body.style.overflowY = ('auto')
     }
   });
 }
