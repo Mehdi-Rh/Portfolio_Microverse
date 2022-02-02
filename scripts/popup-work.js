@@ -2,49 +2,47 @@ const projects = [
   {
     title: 'Tonic',
     src: './images/works/Snapshoot-Portfolio-1.png',
-    description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    tags : ['html', 'css', 'javascript'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    tags: ['html', 'css', 'javascript'],
     seeLivelink: '#',
-    seeSourceLink: '#'
+    seeSourceLink: '#',
   },
   {
     title: 'Multi-Post Stories',
     src: './images/works/Snapshoot-Portfolio-2.png',
-    description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    tags : ['html', 'css', 'javascript'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    tags: ['html', 'css', 'javascript'],
     seeLivelink: '#',
-    seeSourceLink: '#' 
+    seeSourceLink: '#',
   },
   {
     title: 'Tonic',
     src: './images/works/Snapshoot-Portfolio-3.png',
-    description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    tags : ['html', 'css', 'javascript'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    tags: ['html', 'css', 'javascript'],
     seeLivelink: '#',
-    seeSourceLink: '#' 
+    seeSourceLink: '#',
   },
   {
     title: 'Multi-Post Stories',
     src: './images/works/Snapshoot-Portfolio-4.png',
-    description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    tags : ['html', 'css', 'javascript'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    tags: ['html', 'css', 'javascript'],
     seeLivelink: '#',
-    seeSourceLink: '#' 
-  }
-]
+    seeSourceLink: '#',
+  },
+];
 
 const buttons = document.getElementsByClassName('project_btn');
 const work = document.querySelector('.project');
-const popup = document.createElement('section')
+const popup = document.createElement('section');
 popup.classList.add('modal');
 const overlay = document.createElement('div');
-overlay.setAttribute("id", "overlay");
-const body = document.body
-
-
+overlay.setAttribute('id', 'overlay');
+const { body } = document;
 
 function popupShow(cardNbr) {
-  body.style.overflowY = ('hidden')
+  body.style.overflowY = ('hidden');
   popup.style.display = ('block');
   overlay.style.display = ('block');
   work.appendChild(popup);
@@ -78,18 +76,18 @@ function popupShow(cardNbr) {
         </div>
       </div>
     </div>
-  `
+  `;
   document.addEventListener('click', (event) => {
-    if (event.target.id === "closeBtn") {
-      popup.style.display = 'none'
+    if (event.target.id === 'closeBtn') {
+      popup.style.display = 'none';
       overlay.style.display = 'none';
-      body.style.overflowY = ('auto')
+      body.style.overflowY = ('auto');
     }
   });
 }
 
-for (let i = 0 ; i < buttons.length; i += 1) {
+for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
     popupShow(i);
-  })
+  });
 }
