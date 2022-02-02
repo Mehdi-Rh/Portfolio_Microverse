@@ -1,19 +1,34 @@
-
-
 .modal {
+  overflow-y: scroll;
+}
+.modal-body {
   background: #fff;
   position: fixed;
-  top: 2.5vh;
   bottom: 2.5vh;
+
+  top: 2.5vh;
   left: 2.5vw;
+  overflow-y:scroll;
+
   right: 2.5vw;
+  max-width: 1414px !important;
+
+  max-height: 100%;
+  min-height: 100%;
+
   border-radius: 16px;
   z-index: 10;
 
+
+}
+
+.no-scroll-bg {
+  /* overflow-y: hidden;
+  background: none; */
 }
 
 .list-pop {
-  padding: 2vw 0;
+  padding: 1rem 0;
 }
 
 .modal-head {
@@ -23,11 +38,11 @@
 .modal-top {
   display: flex;
   align-items: center;
- justify-content: space-between;
+  justify-content: space-between;
 }
 
 .modal-top h2 {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .modal-top i {
@@ -36,7 +51,6 @@
 
 .modal-footer .tag_list {
   margin: 12px 0 3vw;
-
 }
 
 .modal-bottom p {
@@ -70,5 +84,18 @@
   background-color: #C1C7D0;
   mix-blend-mode: multiply;
   pointer-events: all;
+
 }
 
+/* Desktop version */
+@media screen and (min-width: 992px) {
+
+  .modal {
+    top: 5vh;
+    left: 2.5vw;
+    right: 2.5vw;
+    border-radius: 16px;
+    z-index: 10;
+  }
+
+}

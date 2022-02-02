@@ -39,38 +39,44 @@ const popup = document.createElement('section')
 popup.classList.add('modal');
 const overlay = document.createElement('div');
 overlay.setAttribute("id", "overlay");
+const body = document.body
+
 
 
 function popupShow(cardNbr) {
+  body.classList.add('no-scroll-bg')
+  body.style.overflowY = ('hidden')
   popup.style.display = ('block');
   overlay.style.display = ('block');
   work.appendChild(popup);
   work.appendChild(overlay);
   popup.innerHTML = `
-    <div class='modal-head'>
-      <div class="modal-top">
-        <h2>${projects[cardNbr].title}</h2>
-        <i id="closeBtn" class="fas fa-times" alt='#'></i>
-      </div>
-      <ul class="list list-pop">
-        <li class="company no_bullet">CANOPY</li>
-        <li class="list_bullet date">Back End Dev</li>
-        <li class="list_bullet date">2015</li>
-      </ul>
-      <div class="image">
-        <img src="${projects[cardNbr].src}" alt="p1">
-      </div>
-      <div class="modal-bottom">
-        <p>${projects[cardNbr].description}</p>
-        <div class='modal-footer'>
-          <ul class="tag_list no_bullet">
-            <li class="tag">${projects[cardNbr].tags[0]}</li>
-            <li class="tag">${projects[cardNbr].tags[1]}</li>
-            <li class="tag">${projects[cardNbr].tags[2]}</li>
-          </ul>
-          <div class='modal-buttons'>
-            <button href="${projects[cardNbr].seeLivelink}" class="pop_btn btn-effect">See Live<i class="fas fa-external-link"></i></button>
-            <button href="${projects[cardNbr].seeSourceLink}" class="pop_btn btn-effect ">See Source <i class="fab fa-github"></i></button>
+    <div class='modal-body'>
+      <div class='modal-head'>
+        <div class="modal-top">
+          <h2>${projects[cardNbr].title}</h2>
+          <i id="closeBtn" class="fas fa-times" alt='#'></i>
+        </div>
+        <ul class="list list-pop">
+          <li class="company no_bullet">CANOPY</li>
+          <li class="list_bullet date">Back End Dev</li>
+          <li class="list_bullet date">2015</li>
+        </ul>
+        <div class="image">
+          <img src="${projects[cardNbr].src}" alt="p1">
+        </div>
+        <div class="modal-bottom">
+          <p>${projects[cardNbr].description}</p>
+          <div class='modal-footer'>
+            <ul class="tag_list no_bullet">
+              <li class="tag">${projects[cardNbr].tags[0]}</li>
+              <li class="tag">${projects[cardNbr].tags[1]}</li>
+              <li class="tag">${projects[cardNbr].tags[2]}</li>
+            </ul>
+            <div class='modal-buttons'>
+              <button href="${projects[cardNbr].seeLivelink}" class="pop_btn btn-effect">See Live<i class="fas fa-external-link"></i></button>
+              <button href="${projects[cardNbr].seeSourceLink}" class="pop_btn btn-effect ">See Source <i class="fab fa-github"></i></button>
+            </div>
           </div>
         </div>
       </div>
