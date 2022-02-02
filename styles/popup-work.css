@@ -22,7 +22,6 @@
 .list-pop {
   padding: 1rem 0;
   list-style-type: circle;
-
 }
 
 .modal-head {
@@ -55,7 +54,7 @@
 .modal-buttons {
   display: flex;
   justify-content: flex-start;
-  border-top: 1px solid #EBECF0;
+  border-top: 1px solid #ebecf0;
   padding: 3vw;
   gap: 3vw;
 }
@@ -77,7 +76,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #C1C7D0;
+  background-color: #c1c7d0;
   mix-blend-mode: multiply;
   pointer-events: all;
 }
@@ -93,9 +92,8 @@
     height: 90vh;
   }
 
-  .modal-head img{
+  .modal-head img {
     width: 100%;
-
   }
 
   .modal-bottom {

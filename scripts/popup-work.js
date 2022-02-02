@@ -44,7 +44,6 @@ const body = document.body
 
 
 function popupShow(cardNbr) {
-  body.classList.add('no-scroll-bg')
   body.style.overflowY = ('hidden')
   popup.style.display = ('block');
   overlay.style.display = ('block');
@@ -59,8 +58,8 @@ function popupShow(cardNbr) {
         </div>
         <ul class="list list-pop">
           <li class="company no_bullet">CANOPY</li>
-          <li class="list_bullet date">Back End Dev</li>
-          <li class="list_bullet date">2015</li>
+          <li class="list_bullet ">Back End Dev</li>
+          <li class="list_bullet ">2015</li>
         </ul>
         <img src="${projects[cardNbr].src}" alt="p1">
         <div class="modal-bottom">
