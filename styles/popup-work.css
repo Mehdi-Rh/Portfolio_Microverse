@@ -1,11 +1,19 @@
+
+
 .modal {
   background: #fff;
   position: fixed;
-  top: 10%;
-  left: 5%;
-  width: 90%;
-  height: 80%;
-  overflow-y: scroll;
+  top: 2.5vh;
+  bottom: 2.5vh;
+  left: 2.5vw;
+  right: 2.5vw;
+  border-radius: 16px;
+  z-index: 10;
+
+}
+
+.list-pop {
+  padding: 2vw 0;
 }
 
 .modal-head {
@@ -15,22 +23,52 @@
 .modal-top {
   display: flex;
   align-items: center;
-  
+ justify-content: space-between;
 }
 
-.list-pop {
-  padding: 22px 0;
-  display: flex;
+.modal-top h2 {
+  font-size: 28px;
 }
 
-.date {
+.modal-top i {
+  padding: 0.5rem;
+}
+
+.modal-footer .tag_list {
+  margin: 12px 0 3vw;
+
 }
 
 .modal-bottom p {
-  padding: 12px 0 16px 0;
+  padding-top: 0;
+  font-size: 14px;
 }
 
 .modal-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  border-top: 1px solid #EBECF0;
+  padding-top: 3vw;
 }
+
+.pop_btn {
+  padding: calc(6px + 1vw) calc(7px + 1vw);
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 10px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 1;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #C1C7D0;
+  mix-blend-mode: multiply;
+  pointer-events: all;
+}
+

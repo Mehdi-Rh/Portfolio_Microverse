@@ -37,10 +37,15 @@ const buttons = document.getElementsByClassName('project_btn');
 const work = document.querySelector('.project');
 const popup = document.createElement('section')
 popup.classList.add('modal');
+const overlay = document.createElement('div');
+overlay.setAttribute("id", "overlay");
+
 
 function popupShow(cardNbr) {
   popup.style.display = ('block');
+  overlay.style.display = ('block');
   work.appendChild(popup);
+  work.appendChild(overlay);
   popup.innerHTML = `
     <div class='modal-head'>
       <div class="modal-top">
@@ -64,8 +69,8 @@ function popupShow(cardNbr) {
             <li class="tag">${projects[cardNbr].tags[2]}</li>
           </ul>
           <div class='modal-buttons'>
-            <button href="${projects[cardNbr].seeLivelink}" class="btn-effect">See Project</button>
-            <button href="${projects[cardNbr].seeSourceLink}" class="btn-effect">See Project</button>
+            <button href="${projects[cardNbr].seeLivelink}" class="pop_btn btn-effect">See Live<i class="fas fa-external-link"></i></button>
+            <button href="${projects[cardNbr].seeSourceLink}" class="pop_btn btn-effect ">See Source <i class="fab fa-github"></i></button>
           </div>
         </div>
       </div>
@@ -74,6 +79,7 @@ function popupShow(cardNbr) {
   document.addEventListener('click', (event) => {
     if (event.target.id === "closeBtn") {
       popup.style.display = 'none'
+      overlay.style.display = 'none';
     }
   });
 }
