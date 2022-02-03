@@ -727,3 +727,18 @@ h2 {
   height: 48px;
   border-radius: 8px;
 }
+
+#error {
+  margin: 10px 0;
+  padding: 12px;
+  color: #d8000c;
+  background-color: #ffd2d2;
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  #error {
+    display: none;
+    justify-content: center;
+  }
+}

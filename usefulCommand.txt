@@ -1,0 +1,14 @@
+## weblint
+Run: npx hint .
+
+
+## Stylelint
+
+Auto error fix run: 
+  npx stylelint "**/*.{css,scss}" --fix
+
+
+## EsLint
+
+Auto error fix run: 
+  npx eslint . --fix
