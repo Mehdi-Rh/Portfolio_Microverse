@@ -254,11 +254,13 @@ crossorigin="anonymous"
 					</p>
 				</div>
 				<form
+					id="form"
 					action="https://formspree.io/f/xjvlvvoa"
 					method="post"
 					class="contact-form"
 				>
 					<input 
+					id="name"
 					type="text"
 					name="user_name"
 					placeholder="Name(s)"
@@ -275,6 +277,7 @@ crossorigin="anonymous"
 					required
 					/>
 					<textarea
+					id="message"
 					name="user_message"
 					placeholder="Write your message here"
 					maxlength="500"
@@ -292,6 +295,7 @@ crossorigin="anonymous"
 	<script src="scripts/mobile-menu.js"></script>
 	<script src="scripts/popup-work.js"></script>
 	<script src="scripts/validateForm.js"></script>
+	<script src="scripts/storage.js"></script>
 
 </body>
 </html>

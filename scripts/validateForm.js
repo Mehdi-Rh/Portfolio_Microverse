@@ -1,6 +1,6 @@
 // Style of the Warning isinside the styles/mobile.css file
 const email = document.getElementById('email');
-const form = document.getElementById('contacts');
+const form = document.getElementById('form');
 const errorElement = document.getElementById('error');
 
 form.addEventListener('submit', (event) => {
