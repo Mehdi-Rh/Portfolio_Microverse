@@ -14,14 +14,8 @@
   height: 95vh;
 }
 
-.no-scroll-bg {
-  /* overflow-y: hidden;
-  background: none; */
-}
-
 .list-pop {
   padding: 1rem 0;
-  list-style-type: circle;
 }
 
 .modal-head {
