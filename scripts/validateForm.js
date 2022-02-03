@@ -6,7 +6,7 @@ const errorElement = document.getElementById('error');
 form.addEventListener('submit', (event) => {
   let messages = [];
   if (email.value != email.value.toLowerCase()) {
-    messages.push('The email is not valid, email charachters should be uppercase')
+    messages.push('The email is not valid, email charachters should be lowercase')
   }
 
   if (messages.length > 0) {
