@@ -731,14 +731,13 @@ h2 {
 #error {
   margin: 10px 0;
   padding: 12px;
-  color: #D8000C;
-  background-color: #FFD2D2;
+  color: #d8000c;
+  background-color: #ffd2d2;
   display: none;
 }
 
 @media screen and (min-width: 992px) {
   #error {
-    align-items :center;
-
+    align-items: center;
   }
 }
