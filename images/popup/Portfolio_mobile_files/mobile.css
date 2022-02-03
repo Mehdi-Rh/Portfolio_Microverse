@@ -738,7 +738,7 @@ h2 {
 
 @media screen and (min-width: 992px) {
   #error {
-    display: none;
-    justify-content: center;
+    align-items :center;
+
   }
 }

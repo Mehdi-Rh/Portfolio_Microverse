@@ -1,0 +1,364 @@
+/* ------------------------- Desktop Version ------------------- */
+@media screen and (min-width: 992px) {
+  body {
+    height: auto;
+  }
+
+  header {
+    display: flex;
+    width: 100vw;
+    height: 916px;
+    border-bottom-left-radius: 100px;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .bars.active {
+    display: none;
+  }
+
+  .headline {
+    display: flex;
+    background-image: url(../images/welcome/background/background-desktop.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100vw 80vh;
+    width: 100vw;
+    height: 916px;
+    align-items: flex-start;
+  }
+
+  /* ------- Navbar START -------- */
+  .navbar {
+    width: 80%;
+    padding: 0 10%;
+    height: 5rem;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .nav-menu {
+    position: static;
+    left: 0;
+    top: 0;
+    gap: 5rem;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: auto;
+    text-align: center;
+  }
+
+  .nav-item a {
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* ------- Navbar END -------- */
+
+  .text {
+    display: grid;
+    position: absolute;
+    left: 18%;
+    top: 25%;
+    width: 50vw;
+    order: 0;
+  }
+
+  .text h1,
+  .text p {
+    display: grid;
+    justify-self: stretch;
+    width: 70vw;
+    padding: 0;
+  }
+
+  .text p {
+    font-size: 20px;
+    height: 20%;
+  }
+
+  .connect {
+    position: static;
+    left: 0;
+    order: 1;
+  }
+
+  .contacts {
+    position: static;
+    top: 0;
+    padding-top: 24px;
+    order: 1;
+  }
+
+  /* ------ works ------ */
+  .works {
+    display: flex;
+    gap: 7rem;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: row;
+    padding: 2vw 2vh;
+    height: auto;
+  }
+
+  .inverse {
+    flex-direction: row-reverse;
+  }
+
+  .image {
+    height: 100%;
+    width: 60vw;
+  }
+
+  .image img {
+    height: auto;
+  }
+
+  /* cards */
+  .card {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50vw;
+    padding: 2vh 2vw;
+  }
+
+  .card h2 {
+    font-size: 40px;
+    height: max-content;
+    width: 30vw;
+  }
+
+  .card_head {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+  }
+
+  .company,
+  .list {
+    font-size: 18px;
+  }
+
+  .p_card {
+    width: 25vw;
+    font-size: 16px;
+  }
+
+  .tag {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 24px;
+  }
+
+  .button {
+    width: 124px;
+    height: 48px;
+    margin-top: 1vh;
+  }
+
+  @media screen and (max-width: 900px) {
+    .button {
+      margin-top: 0;
+    }
+  }
+
+  /* ----------- About Myself ----------- */
+  .about_myself {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+  }
+
+  .top {
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+    height: 20%;
+    margin: 0 10%;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .top p {
+    height: 50%;
+  }
+
+  .contacts_about_my_self {
+    display: flex;
+    justify-self: flex-start;
+  }
+
+  .resume_btn {
+    /* Auto Layout */
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 12px;
+    position: static;
+    width: 162px;
+    height: 48px;
+    margin-top: 0;
+  }
+
+  .skills {
+    display: flex;
+    margin-right: 0;
+    align-items: flex-start;
+    position: static;
+    padding-left: 0;
+    width: 45vw;
+    background: none;
+  }
+
+  .li_accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills .no_bullet {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .skill_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 12px;
+    margin-left: 0;
+    left: 0;
+  }
+
+  .accordion {
+    width: 40vw;
+    padding-left: 0;
+    margin-left: 0;
+    left: 0;
+  }
+
+  /* contact form */
+
+  .footer-container {
+    display: flex;
+    width: 100vw;
+    left: 0;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    align-content: center;
+    background: url(../images/Contact_form/CF_background_desktop.svg);
+    background-color: #6070ff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90vw;
+  }
+
+  .contactme-body {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .contact-heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .message-contact {
+    width: 50vw;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 18px auto;
+    width: 60vw;
+  }
+
+  .form-input {
+    margin-bottom: 15px;
+    height: 48px;
+    border-radius: 4px;
+    font-size: 17px;
+    padding: 18px;
+    color: #172b4d;
+    font-family: "poppins", sans-serif;
+    border: 1px solid #cfd8dc;
+  }
+
+  .form-textarea {
+    height: 170px;
+  }
+
+  .contact-submit {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-effect {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid #6070ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    order: 3;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .btn-effect:hover {
+    border: 1px solid #396df2;
+    background: #396df2;
+    color: white;
+    height: 48px;
+    border-radius: 8px;
+  }
+
+  .btn-effect:active {
+    background: navy;
+    color: white;
+    height: 48px;
+    border-radius: 8px;
+  }
+
+  .btn-effect:disabled {
+    border: 2px solid grey;
+    background: white;
+    color: grey;
+    height: 48px;
+    border-radius: 8px;
+  }
+}
