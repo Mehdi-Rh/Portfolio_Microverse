@@ -1,5 +1,5 @@
 // Style of the Warning isinside the styles/mobile.css file
-const email = document.getElementsByClassName('email');
+const email = document.getElementById('email');
 const form = document.getElementById('form');
 const errorElement = document.getElementById('error');
 
