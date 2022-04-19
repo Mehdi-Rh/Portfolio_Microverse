@@ -53,8 +53,15 @@ function popupShow(cardNbr) {
               <li class="tag">${projects[cardNbr].tags[2]}</li>
             </ul>
             <div class='modal-buttons'>
-              <button href="${projects[cardNbr].seeLivelink}" class="pop_btn btn-effect">See Live<i class="fas fa-external-link"></i></button>
-              <button href="${projects[cardNbr].seeSourceLink}" class="pop_btn btn-effect ">See Source <i class="fab fa-github"></i></button>
+            
+              <button  class="pop_btn btn-effect">
+                <a href="${projects[cardNbr].seeLivelink}" target="_blank">See Live</a> 
+                <i class="fas fa-external-link"></i>
+              </button>
+              <button    class="pop_btn btn-effect ">
+                <a href="${projects[cardNbr].seeSourceLink}" target="_blank">See Source</a>  
+                <i class="fab fa-github"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -62,7 +69,8 @@ function popupShow(cardNbr) {
     </div>
   `;
   document.addEventListener('click', (event) => {
-    if (event.target.id === 'closeBtn') {
+    const id = event.target.id
+    if (id === 'closeBtn' || id === 'overlay') {
       popup.style.display = 'none';
       overlay.style.display = 'none';
       body.style.overflowY = ('auto');

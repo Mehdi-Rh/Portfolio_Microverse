@@ -11,6 +11,10 @@
     border-bottom-left-radius: 100px;
   }
 
+  .logo {
+    font-size: xx-large;
+  }
+
   .bars {
     display: none;
   }
@@ -32,14 +36,22 @@
 
   /* ------- Navbar START -------- */
   .navbar {
+    background-color: white;
+    position: fixed;
     width: 80%;
-    padding: 0 10%;
-    height: 5rem;
+    padding: 1rem 10%;
+    height: 3rem;
+  }
+  
+  .header {
+    align-self: center;
+    gap: 40vw;
   }
 
   .logo {
     display: flex;
     justify-content: flex-start;
+    width: max-content;
   }
 
   .nav-menu {
@@ -57,7 +69,7 @@
   .nav-item a {
     color: #344563;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 22px;
     line-height: 20px;
   }
 

@@ -49,19 +49,23 @@ header {
 
 /* ----------- Navbar START --------------- */
 
+.navbar {
+  background: white;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  width: 100vw;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
+  gap: 60vw;
 }
 
 li {
   list-style: none;
-}
-
-.navbar {
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 5%;
 }
 
 .hamburger {
