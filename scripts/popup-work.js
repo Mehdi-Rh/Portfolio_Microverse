@@ -1,7 +1,7 @@
 const projects = [
   {
     title: 'Conference Website',
-    src: './images/works/Snapshoot-Portfolio-1.png',
+    src: './images/screenshots/Snapshoot-Portfolio-1.png',
     description: "This project is a conference website build to showcase the activities of an event.",
     tags: ['HTML', 'CSS', 'Javascript'],
     seeLivelink: 'https://mehdi-rh.github.io/Blog-Capstone/',
@@ -9,7 +9,7 @@ const projects = [
   },
   {
     title: 'Fish Dish',
-    src: './images/works/Snapshoot-Portfolio-2.png',
+    src: './images/screenshots/Snapshoot-Portfolio-2.png',
     description: "This is a web application that displays only fish dishes available on the “themealdb” API and displays them into cards with the option of commenting on it.",
     tags: ['HTML', 'CSS', 'Javascript'],
     seeLivelink: 'https://mehdi-rh.github.io/Fish-dishes-Capstone/',
