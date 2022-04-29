@@ -15,7 +15,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// export { email, form };
+export { email, form };
 
 const userName = document.getElementById('name');
 const message = document.getElementById('message');
