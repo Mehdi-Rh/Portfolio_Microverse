@@ -1,11 +1,19 @@
 const projects = [
   {
-    title: 'Conference Website',
-    src: './images/screenshots/Snapshoot-Portfolio-1.png',
-    description: "This project is a conference website build to showcase the activities of an event.",
-    tags: ['HTML', 'CSS', 'Javascript'],
-    seeLivelink: 'https://mehdi-rh.github.io/Blog-Capstone/',
-    seeSourceLink: 'https://github.com/Mehdi-Rh/Blog-Capstone',
+    title: 'Space Travellers',
+    src: './images/screenshots/Snapshoot-Portfolio-4.png',
+    description: "This website is an SPA  made for the company that provides commercial and scientific space travel services “SpaceX”. It allows the user to book rockets and join selected space missions using the real live data from the SpaceX API.",
+    tags: ['ReactJs', 'Redux', 'Netlify'],
+    seeLivelink: 'https://space-travelers-mehdirh-kayonga99.netlify.app/',
+    seeSourceLink: 'https://github.com/Kayonga99/Space--Travellers',
+  },
+  {
+    title: 'Math Magicians',
+    src: './images/screenshots/Snapshoot-Portfolio-3.png',
+    description: "This project is a responsive SPA that allows users to make simple calculations and read a quote.",
+    tags: ['React', 'Netlify'],
+    seeLivelink: 'https://math-magician-mehdi-rh.netlify.app/',
+    seeSourceLink: 'https://github.com/Mehdi-Rh/Math-magicians',
   },
   {
     title: 'Fish Dish',
@@ -14,6 +22,14 @@ const projects = [
     tags: ['HTML', 'CSS', 'Javascript'],
     seeLivelink: 'https://mehdi-rh.github.io/Fish-dishes-Capstone/',
     seeSourceLink: 'https://github.com/Mehdi-Rh/Fish-dishes-Capstone',
+  },
+  {
+    title: 'Conference Website',
+    src: './images/screenshots/Snapshoot-Portfolio-1.png',
+    description: "This project is a conference website build to showcase the activities of an event.",
+    tags: ['HTML', 'CSS', 'Javascript'],
+    seeLivelink: 'https://mehdi-rh.github.io/Blog-Capstone/',
+    seeSourceLink: 'https://github.com/Mehdi-Rh/Blog-Capstone',
   },
 ];
 
