@@ -22,6 +22,10 @@
   padding: 18px 5%;
 }
 
+.modal-head img {
+  width: 100%;
+}
+
 .modal-top {
   display: flex;
   align-items: center;
@@ -42,7 +46,7 @@
 
 .modal-bottom p {
   padding-top: 0;
-  font-size: 14px;
+  font-size: 22px;
 }
 
 .modal-buttons {
@@ -60,6 +64,10 @@
   display: flex;
   justify-items: flex-start;
   gap: 10px;
+}
+
+.pop_btn a {
+  color: #6070ff;
 }
 
 #overlay {

@@ -15,8 +15,6 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// export { email, form };
-
 const userName = document.getElementById('name');
 const message = document.getElementById('message');
 
@@ -40,3 +38,5 @@ form.addEventListener('change', (e) => {
   data.message = message.value;
   localStorage.setItem('data', JSON.stringify(data));
 });
+
+export { email, form };

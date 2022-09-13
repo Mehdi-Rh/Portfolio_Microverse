@@ -1,6 +1,5 @@
-// import { form, email } from './validateForm.js';
-const form = document.getElementById('form');
-const email = document.getElementById('email');
+import { form, email } from './validateForm.js';
+
 const userName = document.getElementById('name');
 const message = document.getElementById('message');
 

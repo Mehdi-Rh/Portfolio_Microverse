@@ -1,35 +1,35 @@
 const projects = [
   {
-    title: 'Tonic',
-    src: './images/works/Snapshoot-Portfolio-1.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    tags: ['html', 'css', 'javascript'],
-    seeLivelink: '#',
-    seeSourceLink: '#',
+    title: 'Space Travellers',
+    src: './images/screenshots/Snapshoot-Portfolio-4.png',
+    description: 'This website is an SPA  made for the company that provides commercial and scientific space travel services “SpaceX”. It allows the user to book rockets and join selected space missions using the real live data from the SpaceX API.',
+    tags: ['ReactJs', 'Redux', 'Netlify'],
+    seeLivelink: 'https://space-travelers-mehdirh-kayonga99.netlify.app/',
+    seeSourceLink: 'https://github.com/Kayonga99/Space--Travellers',
   },
   {
-    title: 'Multi-Post Stories',
-    src: './images/works/Snapshoot-Portfolio-2.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    tags: ['html', 'css', 'javascript'],
-    seeLivelink: '#',
-    seeSourceLink: '#',
+    title: 'Math Magicians',
+    src: './images/screenshots/Snapshoot-Portfolio-3.png',
+    description: 'This project is a responsive SPA that allows users to make simple calculations and read a quote.',
+    tags: ['React', 'Netlify'],
+    seeLivelink: 'https://math-magician-mehdi-rh.netlify.app/',
+    seeSourceLink: 'https://github.com/Mehdi-Rh/Math-magicians',
   },
   {
-    title: 'Tonic',
-    src: './images/works/Snapshoot-Portfolio-3.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    tags: ['html', 'css', 'javascript'],
-    seeLivelink: '#',
-    seeSourceLink: '#',
+    title: 'Fish Dish',
+    src: './images/screenshots/Snapshoot-Portfolio-2.png',
+    description: 'This is a web application that displays only fish dishes available on the “themealdb” API and displays them into cards with the option of commenting on it.',
+    tags: ['HTML', 'CSS', 'Javascript'],
+    seeLivelink: 'https://mehdi-rh.github.io/Fish-dishes-Capstone/',
+    seeSourceLink: 'https://github.com/Mehdi-Rh/Fish-dishes-Capstone',
   },
   {
-    title: 'Multi-Post Stories',
-    src: './images/works/Snapshoot-Portfolio-4.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    tags: ['html', 'css', 'javascript'],
-    seeLivelink: '#',
-    seeSourceLink: '#',
+    title: 'Conference Website',
+    src: './images/screenshots/Snapshoot-Portfolio-1.png',
+    description: 'This project is a conference website build to showcase the activities of an event.',
+    tags: ['HTML', 'CSS', 'Javascript'],
+    seeLivelink: 'https://mehdi-rh.github.io/Blog-Capstone/',
+    seeSourceLink: 'https://github.com/Mehdi-Rh/Blog-Capstone',
   },
 ];
 
@@ -55,9 +55,9 @@ function popupShow(cardNbr) {
           <i id="closeBtn" class="fas fa-times" alt='#'></i>
         </div>
         <ul class="list list-pop">
-          <li class="company no_bullet">CANOPY</li>
-          <li class="list_bullet ">Back End Dev</li>
-          <li class="list_bullet ">2015</li>
+        <li class="company no_bullet">Self Project</li>
+        <li class="list_bullet">Front End Dev</li>
+        <li class="list_bullet">2022</li>
         </ul>
         <img src="${projects[cardNbr].src}" alt="p1">
         <div class="modal-bottom">
@@ -69,8 +69,15 @@ function popupShow(cardNbr) {
               <li class="tag">${projects[cardNbr].tags[2]}</li>
             </ul>
             <div class='modal-buttons'>
-              <button href="${projects[cardNbr].seeLivelink}" class="pop_btn btn-effect">See Live<i class="fas fa-external-link"></i></button>
-              <button href="${projects[cardNbr].seeSourceLink}" class="pop_btn btn-effect ">See Source <i class="fab fa-github"></i></button>
+            
+              <button  class="pop_btn btn-effect">
+                <a href="${projects[cardNbr].seeLivelink}" target="_blank">See Live</a> 
+                <i class="fas fa-external-link"></i>
+              </button>
+              <button    class="pop_btn btn-effect ">
+                <a href="${projects[cardNbr].seeSourceLink}" target="_blank">See Source</a>  
+                <i class="fab fa-github"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -78,7 +85,8 @@ function popupShow(cardNbr) {
     </div>
   `;
   document.addEventListener('click', (event) => {
-    if (event.target.id === 'closeBtn') {
+    const { id } = event.target;
+    if (id === 'closeBtn' || id === 'overlay') {
       popup.style.display = 'none';
       overlay.style.display = 'none';
       body.style.overflowY = ('auto');
